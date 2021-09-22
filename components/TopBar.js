@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Profile from '../Assets/Images/login.jpg'
 function TopBar(props) {
     return (
-        <div className="h-16 pl-40 fixed bg-gradient-to-r from-purple-300 to-blue-500 w-full flex items-center justify-between pr-5">
+        <div className="h-16 pl-40 fixed bg-gradient-to-r from-purple-300 to-blue-500 w-full flex items-center justify-between pr-5 z-10">
             <div className="flex px-5 space-x-5 items-center">
                 <SearchIcon className="w-5 h-5 text-white items-center"/>
                 <input type="text" placeholder="Search For task" className="bg-transparent border-0 placeholder-white text-white outline-none focus:outline-none focus:ring-0 text-lg"/>

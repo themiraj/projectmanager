@@ -2,8 +2,8 @@ import React from 'react'
 import { UserGroupIcon, ServerIcon,CalendarIcon,ChartSquareBarIcon,CogIcon } from '@heroicons/react/outline'
 function SideBar() {
     return (
-        <div className="fixed inset-y-0 left-0 bg-white w-40">
-            <h1 className="flex items-center justify-center text-xl h-16 bg-purple-600 text-white font-bold">M Manager</h1>    
+        <div className="fixed inset-y-0 left-0 bg-white w-40 z-20">
+            <h1 className="flex items-center justify-center text-xl h-16 bg-purple-600 text-white font-bold">P Manager</h1>    
             <ul className="flex flex-col flex-1 h-full">
                 <li className="flex justify-center items-center flex-col py-5 text-gray-500">
                     <UserGroupIcon className="w-7 h-7"/>
