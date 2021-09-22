@@ -7,7 +7,7 @@ function SideBar() {
             <ul className="flex flex-col flex-1 h-full">
                 <li className="flex justify-center items-center flex-col py-5 text-gray-500">
                     <UserGroupIcon className="w-7 h-7"/>
-                    Manage
+                    Manage 
                 </li>    
                 <li className="flex justify-center items-center flex-col py-5 border-l-4 border-purple-500 text-purple-500">
                     <ServerIcon className="w-7 h-7 text-purple-500 font-bold"/>
