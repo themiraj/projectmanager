@@ -11,6 +11,9 @@ import CardItem from "../components/CardItem";
 import BoardData from "../data/board-data.json";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { useEffect, useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function createGuidId() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -20,12 +23,14 @@ function createGuidId() {
 }
 
 export default function Home() {
+  
   const [ready, setReady] = useState(false);
   const [boardData, setBoardData] = useState(BoardData);
   const [showForm, setShowForm] = useState(false);
   const [selectedBoard, setSelectedBoard] = useState(0);
 
   useEffect(() => {
+    toast("Login Successfull !")
     if (process.browser) {
       setReady(true);
     }
@@ -76,6 +81,17 @@ export default function Home() {
 
   return (
     <Layout>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover>
+      </ToastContainer>
+
       <div className="p-10 flex flex-col h-screen">
         {/* Board header */}
         <div className="flex flex-initial justify-between">
